@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="androidLargeOneTwoVM" type="com.sapplication.app.modules.androidlargeonetwo.data.viewmodel.AndroidLargeOneTwoVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameAndroidLarge"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linearColumntwentythree"
+            android:layout_gravity="end"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_24pxv"
+            android:layout_marginEnd="@dimen/_30pxh"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_marginTop="@dimen/_24pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <TextView android:ellipsize="end" android:gravity="start"
+                android:id="@+id/txtTwentyThree"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_12pxh"
+                android:layout_marginStart="@dimen/_12pxh"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{androidLargeOneTwoVM.androidLargeOneTwoModel.txtTwentyThree}"
+                style="@style/txt_1" tools:text="@string/msg"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtLanguage"
+                android:layout_gravity="end"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_4pxh"
+                android:layout_marginStart="@dimen/_188pxh"
+                android:layout_marginTop="@dimen/_14pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{androidLargeOneTwoVM.androidLargeOneTwoModel.txtLanguage}"
+                style="@style/txtIntersemibold14" tools:text="@string/lbl2"/>
+            <View
+                android:background="@drawable/rectangle_bg_bluegray_100_border_black_900"
+                android:id="@+id/viewRectangleOne"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_36pxv"
+                android:layout_marginEnd="@dimen/_9pxh"
+                android:layout_marginTop="@dimen/_13pxv" android:layout_width="@dimen/_265pxh"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtTwentyFour"
+                android:layout_gravity="end"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_4pxh"
+                android:layout_marginStart="@dimen/_192pxh"
+                android:layout_marginTop="@dimen/_57pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{androidLargeOneTwoVM.androidLargeOneTwoModel.txtTwentyFour}"
+                style="@style/txtIntersemibold14" tools:text="@string/lbl3"/>
+            <View
+                android:background="@drawable/rectangle_bg_bluegray_100_border_black_900"
+                android:id="@+id/viewRectangleTwo"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_35pxv"
+                android:layout_marginEnd="@dimen/_9pxh"
+                android:layout_marginTop="@dimen/_16pxv" android:layout_width="@dimen/_265pxh"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtTwentyFive"
+                android:layout_gravity="end"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_4pxh"
+                android:layout_marginStart="@dimen/_221pxh"
+                android:layout_marginTop="@dimen/_57pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{androidLargeOneTwoVM.androidLargeOneTwoModel.txtTwentyFive}"
+                style="@style/txtIntersemibold14" tools:text="@string/lbl4"/>
+            <View
+                android:background="@drawable/rectangle_bg_bluegray_100_border_black_900"
+                android:id="@+id/viewRectangleThree"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_35pxv"
+                android:layout_marginEnd="@dimen/_9pxh"
+                android:layout_marginTop="@dimen/_23pxv" android:layout_width="@dimen/_265pxh"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtTwentySix"
+                android:layout_gravity="end"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_60pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{androidLargeOneTwoVM.androidLargeOneTwoModel.txtTwentySix}"
+                style="@style/txtIntersemibold14" tools:text="@string/lbl5"/>
+            <View
+                android:background="@drawable/rectangle_bg_bluegray_100_border_black_900"
+                android:id="@+id/viewRectangleFour"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_36pxv"
+                android:layout_marginEnd="@dimen/_9pxh"
+                android:layout_marginTop="@dimen/_20pxv" android:layout_width="@dimen/_265pxh"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtTwentySeven"
+                android:layout_gravity="end"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_3pxh"
+                android:layout_marginStart="@dimen/_201pxh"
+                android:layout_marginTop="@dimen/_61pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{androidLargeOneTwoVM.androidLargeOneTwoModel.txtTwentySeven}"
+                style="@style/txtIntersemibold14" tools:text="@string/lbl6"/>
+            <View
+                android:background="@drawable/rectangle_bg_bluegray_100_border_black_900"
+                android:id="@+id/viewRectangleFive"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_35pxv"
+                android:layout_marginEnd="@dimen/_9pxh"
+                android:layout_marginTop="@dimen/_19pxv" android:layout_width="@dimen/_265pxh"/>
+            <LinearLayout android:gravity="end"
+                android:id="@+id/linearRowtwentyeight"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_9pxh"
+                android:layout_marginStart="@dimen/_68pxh"
+                android:layout_marginTop="@dimen/_61pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtTwentyEight"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_3pxv"
+                    android:layout_weight="0.89"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{androidLargeOneTwoVM.androidLargeOneTwoModel.txtTwentyEight}"
+                    style="@style/txtIntersemibold14" tools:text="@string/msg2"/>
+                <View android:background="@color/bluegray_100"
+                    android:id="@+id/viewRectangleSix"
+                    android:layout_height="@dimen/_26pxh"
+                    android:layout_marginStart="@dimen/_11pxh"
+                    android:layout_marginTop="@dimen/_3pxv" android:layout_width="@dimen/_21pxh"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

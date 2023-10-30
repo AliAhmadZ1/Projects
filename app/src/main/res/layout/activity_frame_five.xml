@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="frameFiveVM" type="com.sapplication.app.modules.framefive.data.viewmodel.FrameFiveVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnhome"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <LinearLayout android:gravity="center_vertical"
+            android:id="@+id/linearAndroidLarge"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="horizontal" style="@style/groupStylewhite_A700">
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearColumnregistrationty"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_292pxv"
+                android:layout_marginStart="@dimen/_78pxh"
+                android:layout_marginTop="@dimen/_51pxv"
+                android:layout_weight="0.83" android:layout_width="0dp" android:orientation="vertical">
+                <TextView android:gravity="center_horizontal"
+                    android:id="@+id/txtRegistrationty"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="@{frameFiveVM.frameFiveModel.txtRegistrationty}"
+                    style="@style/txtIntersemibold35" tools:text="@string/msg_registration_ty"/>
+                <LinearLayout android:gravity="center_horizontal"
+                    android:id="@+id/linearColumnschool"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_18pxh"
+                    android:layout_marginStart="@dimen/_19pxh"
+                    android:layout_marginTop="@dimen/_47pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylecornerRadius">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:ellipsize="end" android:gravity="center"
+                        android:id="@+id/btnSchool"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/_9pxv"
+                        android:layout_marginEnd="@dimen/_11pxh"
+                        android:layout_marginStart="@dimen/_9pxh"
+                        android:layout_marginTop="@dimen/_8pxv"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="@dimen/_27pxv"
+                        android:paddingEnd="@dimen/_13pxh"
+                        android:paddingStart="@dimen/_17pxh"
+                        android:paddingTop="@dimen/_27pxv"
+                        android:singleLine="true"
+                        android:text="@string/lbl_school"
+                        android:textAllCaps="false"
+                        style="@style/btnSolidRoundedOutline_1" tools:text="@string/lbl_school"/>
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnStudent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_19pxh"
+                    android:layout_marginStart="@dimen/_19pxh"
+                    android:layout_marginTop="@dimen/_105pxv"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_27pxv"
+                    android:paddingEnd="@dimen/_6pxh"
+                    android:paddingStart="@dimen/_5pxh"
+                    android:paddingTop="@dimen/_27pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_student"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRoundedOutline" tools:text="@string/lbl_student"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/imageHome"
+                android:layout_height="@dimen/_35pxh"
+                android:layout_marginBottom="@dimen/_744pxv"
+                android:layout_marginEnd="@dimen/_18pxh"
+                android:layout_marginStart="@dimen/_16pxh"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:layout_width="@dimen/_41pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_home"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_home"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
