@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="androidLargeFiveVM" type="com.sapplication.app.modules.androidlargefive.data.viewmodel.AndroidLargeFiveVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearAndroidLarge"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumnarrowone"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <androidx.appcompat.widget.Toolbar
+                android:gravity="center_horizontal"
+                android:id="@+id/toolbarToolbar"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_13pxv"
+                android:layout_width="match_parent" app:contentInsetStart="0dp">
+                <LinearLayout android:id="@+id/linearRowarrowone"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <FrameLayout android:id="@+id/frameStackarrowone"
+                        android:layout_height="@dimen/_36pxv"
+                        android:layout_marginBottom="@dimen/_29pxv"
+                        android:layout_width="@dimen/_40pxh" style="@style/groupStylegray_50">
+                        <ImageView android:id="@+id/imageArrowOne"
+                            android:layout_gravity="end"
+                            android:layout_height="@dimen/_1pxh"
+                            android:layout_marginBottom="@dimen/_16pxv"
+                            android:layout_marginStart="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_16pxv"
+                            android:layout_width="@dimen/_20pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_arrow1"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_arrow1"/>
+                    </FrameLayout>
+                    <TextView android:id="@+id/txtCreateaschool"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_50pxh"
+                        android:layout_marginTop="@dimen/_11pxv"
+                        android:layout_weight="0.67"
+                        android:layout_width="0dp"
+                        android:text="@{androidLargeFiveVM.androidLargeFiveModel.txtCreateaschool}"
+                        style="@style/txtIntersemibold22" tools:text="@string/msg_create_a_school"/>
+                    <ImageView android:id="@+id/imageHome"
+                        android:layout_height="@dimen/_35pxh"
+                        android:layout_marginBottom="@dimen/_19pxv"
+                        android:layout_marginStart="@dimen/_36pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="@dimen/_41pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_home"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_home"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtSchoolname"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_28pxh"
+                android:layout_marginStart="@dimen/_28pxh"
+                android:layout_marginTop="@dimen/_41pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{androidLargeFiveVM.androidLargeFiveModel.txtSchoolname}"
+                style="@style/txtIntersemibold14" tools:text="@string/lbl_school_name"/>
+            <View
+                android:background="@drawable/rectangle_bg_indigo_100_border_black_900"
+                android:id="@+id/viewRectangleOne"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_39pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_24pxv" android:layout_width="@dimen/_313pxh"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtSchoolnumber"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_26pxh"
+                android:layout_marginStart="@dimen/_26pxh"
+                android:layout_marginTop="@dimen/_32pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{androidLargeFiveVM.androidLargeFiveModel.txtSchoolnumber}"
+                style="@style/txtIntersemibold14" tools:text="@string/lbl_school_number"/>
+            <View
+                android:background="@drawable/rectangle_bg_indigo_100_border_black_900"
+                android:id="@+id/viewRectangleTwo"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_39pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_37pxv" android:layout_width="@dimen/_313pxh"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtRegion"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_26pxh"
+                android:layout_marginStart="@dimen/_26pxh"
+                android:layout_marginTop="@dimen/_11pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{androidLargeFiveVM.androidLargeFiveModel.txtRegion}"
+                style="@style/txtIntersemibold14" tools:text="@string/lbl_region"/>
+            <View
+                android:background="@drawable/rectangle_bg_indigo_100_border_black_900"
+                android:id="@+id/viewRectangleThree"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_39pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_21pxv" android:layout_width="@dimen/_313pxh"/>
+            <TextView android:ellipsize="end" android:id="@+id/txtCity"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_26pxh"
+                android:layout_marginStart="@dimen/_26pxh"
+                android:layout_marginTop="@dimen/_29pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{androidLargeFiveVM.androidLargeFiveModel.txtCity}"
+                style="@style/txtIntersemibold14" tools:text="@string/lbl_city"/>
+            <EditText
+                android:background="@drawable/rectangle_bg_indigo_100_border_black_900"
+                android:ellipsize="end"
+                android:id="@+id/etRectangleFour"
+                android:inputType="text"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_13pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@={androidLargeFiveVM.androidLargeFiveModel.etRectangleFourValue}"
+                style="@style/etSolidOutline" tools:ignore="Autofill"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtPassword"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_26pxh"
+                android:layout_marginStart="@dimen/_26pxh"
+                android:layout_marginTop="@dimen/_29pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{androidLargeFiveVM.androidLargeFiveModel.txtPassword}"
+                style="@style/txtIntersemibold14" tools:text="@string/lbl_password2"/>
+            <EditText
+                android:background="@drawable/rectangle_bg_indigo_100_border_black_900"
+                android:ellipsize="end"
+                android:id="@+id/etRectangleFive"
+                android:inputType="text"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_14pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@={androidLargeFiveVM.androidLargeFiveModel.etRectangleFiveValue}"
+                style="@style/etSolidOutline" tools:ignore="Autofill"/>
+            <LinearLayout android:gravity="end"
+                android:id="@+id/linearRowtermandcondition"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_30pxv"
+                android:layout_marginEnd="@dimen/_39pxh"
+                android:layout_marginStart="@dimen/_39pxh"
+                android:layout_marginTop="@dimen/_126pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtTermAndCondition"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_7pxv"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_weight="0.92"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{androidLargeFiveVM.androidLargeFiveModel.txtTermAndCondition}"
+                    style="@style/txtIntersemibold14" tools:text="@string/msg_i_agree_to_the"/>
+                <View android:background="@color/bluegray_100"
+                    android:id="@+id/viewRectangleSix"
+                    android:layout_height="@dimen/_26pxh"
+                    android:layout_marginStart="@dimen/_11pxh" android:layout_width="@dimen/_21pxh"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
